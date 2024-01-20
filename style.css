@@ -268,20 +268,17 @@ body{
     position: relative;
 }
 
-/*skills section*/
+/*experience section*/
 .content-title{
     color: var(--brown-3-color);
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 0.5px;
     position: relative;
-
 }
 
 .experience{
-    position: absolute;
     width: 100%;
-    min-height: 100vh;
     align-items: center;
     margin-top: 60px;
     background: url(assets/background8.png) no-repeat center;   
@@ -306,11 +303,63 @@ body{
     box-sizing: border-box;
     line-height: 30px;
     font-size: 0.9em;
-    font-weight: 80;
+    font-weight: 100;
     letter-spacing: 0.8px;
     position: relative;
 }
 
+/*services section*/
+.services-content{
+    color: var(--brown-3-color);
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 20px;
+}
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.services .content .card{
+    width: 250px;
+    background-color: var(--white-color);
+    color: var(--brown-3-color);
+    padding: 25px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 25px #eba7ac ;
+
+}
+
+.services .content .card .service-icon{
+    font-size: 2.5em;
+    color: var(--pink-2-color);
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.services .content .card:hover .service-icon{
+    transform: scale(1.2);
+}
+
+.services .content .card .info{
+    text-align: center;
+}
+
+.services .content .card .info h3{
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 10px;
+}
 
 @media screen and (max-width: 768px){
     .main{
