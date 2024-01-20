@@ -20,6 +20,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nanum Gothic', sans-serif;
+    scroll-behavior: smooth;
 }
 
 section{
@@ -182,6 +183,83 @@ header .navigation a:hover{
 
 body{
     min-height: 110vh;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-title{
+    color: var(--brown-2-color);
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.section-title::before{
+    content: '';
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 7px;
+    background: var(--pink-4-color);
+    border-radius: 50%;
+}
+
+.section-title::after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: var(--pink-2-color);
+    border-radius: 50%;
+}
+
+.about .about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.about .about-content .col-left{
+    width: 45%;
+    position: relative;
+}
+
+.about .about-content .col-right{
+    width: 50%;
+    position: relative;
+}
+
+.about .about-content .col-right .content-title{
+    color: var(--brown-3-color);
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+
+}
+
+.about .about-content .col-right .paragraph{
+    color: var(--brown-4-color);
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    position: relative;
 }
 
 @media screen and (max-width: 768px){
