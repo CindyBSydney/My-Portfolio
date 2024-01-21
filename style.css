@@ -275,6 +275,7 @@ body{
     font-weight: 600;
     letter-spacing: 0.5px;
     position: relative;
+    text-align: center;
 }
 
 .experience{
@@ -285,12 +286,14 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    text-align: center;
 }
 
 .experience-cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
 .experience-card {
@@ -335,7 +338,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 5px 25px #eba7ac ;
+    box-shadow: 0px 5px 25px var(--pink-3-color);
 
 }
 
@@ -411,6 +414,126 @@ body{
     letter-spacing: 0.5px;
     margin: 10px;
 }
+
+/*contact section*/
+.contact .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;  
+}
+
+.contact .content .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contact .content .row .card{
+    width: 240px;
+    background-color: var(--white-color);
+    color: var(--brown-3-color);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 25px var(--pink-3-color);
+}
+
+.contact .content .row .card .contact-icon{
+    font-size: 2.5em;
+    color: var(--pink-2-color);
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.contact .content .row .card:hover .contact-icon{
+    transform: translate(10px, -10px);
+}
+
+.contact .content .row .card .info{
+    text-align: center;
+}
+
+.contact .content .row .card .info h3{
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 10px;
+    color: var(--brown-4-color);
+}
+
+.contact .content .row .card .info span{
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--brown-5-color);
+}
+
+.contact-form{
+    background: var(--white-color);
+    max-width: 500px;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 25px var(--pink-3-color);
+}
+
+.contact-form h3{
+    color: var(--brown-3-color);
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin: 5px;
+    border: 1px solid var(--brown-4-color);
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+}
+
+.contact-form .input-box .send-button{
+    color: var(--white-color);
+    background: var(--pink-2-color);
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.contact-form .input-box .send-button:hover{
+    background: var(--pink-3-color);
+}
+
 
 
 @media screen and (max-width: 768px){
