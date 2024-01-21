@@ -314,9 +314,9 @@ body{
 /*services section*/
 .services-content{
     color: var(--brown-3-color);
-    font-size: 0.8em;
-    font-weight: 300;
-    letter-spacing: 0.5px;
+    font-size: 0.9em;
+    font-weight: 200;
+    letter-spacing: 1px;
     position: relative;
     line-height: 20px;
 }
@@ -329,7 +329,7 @@ body{
 }
 
 .services .content .card{
-    width: 250px;
+    width: 265px;
     background-color: var(--white-color);
     color: var(--brown-3-color);
     padding: 25px;
