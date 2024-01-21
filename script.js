@@ -20,3 +20,17 @@ navigationItems.forEach((navigationItem) => {
     });
 });
 
+//scroll to top button
+const scrollBtn = document.querySelector(".scroll");
+
+window.addEventListener("scroll", () => {
+    scrollBtn.classList.toggle("active", window.scrollY > 500);
+});
+
+//scroll back to top on click
+scrollBtn.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
+
+
